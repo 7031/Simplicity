@@ -13,16 +13,30 @@
 <div class="navbar navbar-fixed-top navbar-inverse">
 	<div class="navbar-inner">
 		<div class="container">
-			<a class="brand" href="#">Simplicity</a>
+			<?php echo $this->Html->Link('Simplicity', array('controller' => 'posts', 'action' => 'index'), array('class' => 'brand')); ?>
 			<ul class="nav">
 				<li><a href="#">About</a></li>
 			</ul>
-<?php /*
 			<ul class="nav pull-right">
 				<li class="divider-vertical"></li>
-				<li><a href="#">Admin</a></li>
+				<?php if (!$authUser) { ?>
+				<li><?php echo $this->Html->Link('Login', array('controller' => 'users', 'action' => 'login')); ?></li>
+				<?php } else { ?>
+				<li>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $authUser['username']; ?> <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><?php echo $this->Html->Link('New Post', array('controller' => 'posts', 'action' => 'add')); ?></li>
+						<?php if ($authUser['role'] == 'admin') { ?>
+						<li class="divider"></li>
+						<li><?php echo $this->Html->Link('Users', array('controller' => 'users', 'action' => 'index')); ?></li>
+						<li><?php echo $this->Html->Link('Add User', array('controller' => 'users', 'action' => 'add')); ?></li>
+						<?php } ?>
+						<li class="divider"></li>
+						<li><?php echo $this->Html->Link('Logout', array('controller' => 'users', 'action' => 'logout')); ?></li>
+					</ul>
+				</li>
+				<?php } ?>
 			</ul> 
-*/ ?>
 		</div>
 	</div>
 </div>

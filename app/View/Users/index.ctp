@@ -1,5 +1,4 @@
-<p><?php echo $this->Html->Link('Add User', array('controller' => 'users', 'action' => 'add'), array('class' => 'btn pull-right')); ?></p>
-<br><br>
+<h2>Users</h2>
 <table class="table table-striped">
 	<tr>
 		<th>Username</th>
@@ -14,4 +13,4 @@
 	</tr>
 	<?php endforeach; ?>
 </table>
-
+<?php echo $this->Html->Link('Add User', array('controller' => 'users', 'action' => 'add'), array('class' => 'btn')); ?>
