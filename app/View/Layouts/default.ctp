@@ -14,9 +14,6 @@
 	<div class="navbar-inner">
 		<div class="container">
 			<?php echo $this->Html->Link('Simplicity', array('controller' => 'posts', 'action' => 'index'), array('class' => 'brand')); ?>
-			<ul class="nav">
-				<li><a href="#">About</a></li>
-			</ul>
 			<ul class="nav pull-right">
 				<li class="divider-vertical"></li>
 				<?php if (!$authUser) { ?>

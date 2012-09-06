@@ -26,6 +26,8 @@
 	Router::connect('/posts/*', array('controller' => 'posts', 'action' => 'view'));
 	
 	Router::connect('/new/*', array('controller' => 'posts', 'action' => 'add'));
+	
+	Router::connect('/edit/*', array('controller' => 'posts', 'action' => 'edit'));
 
 /**
  * Load all plugin routes.  See the CakePlugin documentation on 
