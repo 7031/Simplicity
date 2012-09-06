@@ -2,8 +2,16 @@
 class PostsController extends AppController {
 	public $helpers = array('Html', 'Form');
 	
+	var $paginate = array(
+		'limit' => 10,
+		'order' => array(
+			'Post.created' => 'desc'
+		)
+	);
+	
 	public function index() {
-		$this->set('posts', $this->Post->find('all'));
+		$data = $this->paginate('Post');
+		$this->set('posts', $data);
 	}
 	
 	public function view($id = null) {

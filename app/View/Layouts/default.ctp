@@ -37,7 +37,7 @@
 </div>
 <footer>
 	Copyright &copy; HippieJoel.com<br>
-	Powered by <a href="#">Simplicity</a>
+	Powered by <a href="https://github.com/StuzzHosting/Simplicity">Simplicity</a>
 </footer>
 <?php echo $this->Html->script('jquery.min'); ?>
 <?php echo $this->Html->script('bootstrap.min'); ?>
