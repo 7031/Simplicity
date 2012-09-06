@@ -7,3 +7,4 @@ echo $this->Form->Input('body', array('label' => 'Body - Supports HTML', 'rows' 
 echo $this->Form->submit('Save Post', array('class' => 'btn btn-primary', 'style' => 'width: 100%'));
 echo $this->Form->end();
 ?>
+<?php echo $this->Html->Link('Go back', array('controller' => 'posts', 'action' => 'index')); ?>
