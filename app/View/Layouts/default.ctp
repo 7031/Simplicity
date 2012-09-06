@@ -17,10 +17,12 @@
 			<ul class="nav">
 				<li><a href="#">About</a></li>
 			</ul>
+<?php /*
 			<ul class="nav pull-right">
 				<li class="divider-vertical"></li>
 				<li><a href="#">Admin</a></li>
-			</ul>
+			</ul> 
+*/ ?>
 		</div>
 	</div>
 </div>
