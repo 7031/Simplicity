@@ -12,6 +12,7 @@ class UsersController extends AppController {
 	}
 	
 	public function view($id = null) {
+		$this->redirect(array('action' => 'index'));
 		$this->User->id = $id;
 		if (!$this->User->exists()) {
 			throw new NotFoundException(__('Invalid user'));
