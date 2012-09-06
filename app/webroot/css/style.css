@@ -1,0 +1,54 @@
+@import 'bootstrap.min.css';
+
+body {
+	background-image: url('../img/bg.jpg');
+	background-position: fixed;
+	background-repeat: repeat-x;
+	background-color: #000;
+}
+
+.container {
+	width: 620px;
+	max-width: 620px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content {
+	background-color: #fff;
+	padding: 20px;
+	margin-top: 20px;
+	-moz-box-shadow: 	0px 3px 10px 0px #222;
+	-webkit-box-shadow: 0px 3px 10px 0px #222;
+	box-shadow:			0px 3px 10px 0px #222;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ddd;
+}
+
+.header {
+	text-align: center;
+}
+
+h4 {
+	color: #777;
+	margin: 0;
+}
+
+h1 {
+	text-align: center;
+	margin: 0;
+}
+
+h2 {
+	font-size: 20pt;
+	margin: 0;
+}
+
+footer {
+	font-size: 9pt;
+	font-weight: 600;
+	text-align: center;
+	color: #fff;
+	margin-top: 20px;
+}
