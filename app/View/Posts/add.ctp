@@ -1,3 +1,4 @@
+<?php echo $this->Html->Link('Go back', array('controller' => 'posts', 'action' => 'index')); ?>
 <h2>Add Post</h2>
 <?php 
 echo $this->Form->create('Post');
