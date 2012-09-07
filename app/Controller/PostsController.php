@@ -32,6 +32,7 @@ class PostsController extends AppController {
 	
 	public function edit($id = null) {
 		$this->Post->id = $id;
+		$this->set('id', $id);
 		if ($this->request->is('get')) {
 			$this->request->data = $this->Post->read();
 		} else {

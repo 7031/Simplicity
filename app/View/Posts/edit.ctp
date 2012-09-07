@@ -7,4 +7,17 @@ echo $this->Form->Input('body', array('label' => 'Body - Supports HTML', 'rows' 
 echo $this->Form->submit('Save Post', array('class' => 'btn btn-primary', 'style' => 'width: 100%'));
 echo $this->Form->end();
 ?>
-<?php echo $this->Html->Link('Go back', array('controller' => 'posts', 'action' => 'index')); ?>
+<table style="width: 100%">
+	<tr>
+		<td>
+			<?php echo $this->Html->Link('Go back', array('controller' => 'posts', 'action' => 'index')); ?>
+		</td>
+		<td style="text-align: right;">
+			<?php echo $this->Form->postLink(
+				'Delete',
+				array('action' => 'delete', $id),
+				array('confirm' => 'Are you sure?'));
+			?>
+		</td>
+	</tr>
+</table>
