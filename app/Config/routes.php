@@ -23,12 +23,19 @@
 
 	Router::connect('/', array('controller' => 'posts', 'action' => 'index'));
 
-	Router::connect('/posts/*', array('controller' => 'posts', 'action' => 'view'));
+	Router::connect('/post/*', array('controller' => 'posts', 'action' => 'view'));
 	
-	Router::connect('/new/*', array('controller' => 'posts', 'action' => 'add'));
+	Router::connect('/list/*', array('controller' => 'posts', 'action' => 'postlist'));
+	
+	Router::connect('/new', array('controller' => 'posts', 'action' => 'add'));
+	
+	Router::connect('/new/', array('controller' => 'posts', 'action' => 'add'));
 	
 	Router::connect('/edit/*', array('controller' => 'posts', 'action' => 'edit'));
-
+	
+	Router::connect('/page/*', array('controller' => 'pages', 'action' => 'view'));
+	
+	Router::connect('/new/page/*', array('controller' => 'pages', 'action' => 'add'));
 /**
  * Load all plugin routes.  See the CakePlugin documentation on 
  * how to customize the loading of plugin routes.

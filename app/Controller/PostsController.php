@@ -9,7 +9,17 @@ class PostsController extends AppController {
 		)
 	);
 	
+	public function beforeFilter() {
+		parent::beforeFilter();
+		$this->Auth->deny('aindex');
+	}
+	
 	public function index() {
+		$data = $this->paginate('Post');
+		$this->set('posts', $data);
+	}
+	
+	public function postlist() {
 		$data = $this->paginate('Post');
 		$this->set('posts', $data);
 	}

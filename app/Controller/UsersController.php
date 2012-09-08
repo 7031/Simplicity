@@ -2,8 +2,8 @@
 class UsersController extends AppController {
 	public function beforeFilter() {
 		parent::beforeFilter();
-		$this->Auth->allow('logout', 'index', 'add');
-		/* $this->Auth->deny('index', 'view'); */
+		$this->Auth->allow('logout');
+		$this->Auth->deny('index', 'view');
 	}
 	
 	public function index() {

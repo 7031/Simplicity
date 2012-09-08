@@ -40,6 +40,11 @@ class AppController extends Controller {
 		)
 	);
 	
+	function beforeRender() 
+	{
+		$this->set('sversion', '1.0');
+	}
+	
 	public function beforeFilter() {
 		$this->Auth->allow('index', 'view');
 		$this->set('authUser', $this->Auth->user());
