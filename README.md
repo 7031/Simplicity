@@ -43,8 +43,3 @@ Categories: Reason for this not being higher is that honestly I don't see them a
 Demo
 ----
 I've currently got it up and running at http://hippiejoel.com/dev 
-
-License
--------
-Simplicity is governed by the Don't be an Asshole Public License (DBAAPL). If you have any questions about this license, please defer them to Nightgunner5.
-
